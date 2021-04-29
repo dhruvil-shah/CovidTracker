@@ -1,0 +1,80 @@
+
+form{
+    display: inline-block;
+    margin: 0px 50px;
+    width: 300px;
+    padding: 13px;
+    border-radius: 13px;
+    background-color: rgba(209, 158, 158, 0.452);
+}
+input{
+    display: block;
+    padding: 8px;
+    margin: 13px auto;
+}
+input[type=checkbox]{
+    display: flex;
+    padding: 13px;
+    flex-direction: row;
+    justify-content: center;
+}
+p{
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 13px auto;
+}
+button{
+    display: block;
+    padding: 8px;
+    margin: 13px auto;
+
+}
+.card1{
+    
+    border-radius: 33px;
+    display: inline-block;
+    margin: 0px 50px;
+    /* width: 200px; */
+    padding: 13px;
+    background-color: rgb(139, 40, 40);
+    box-shadow: 7px 7px 7px 7px rgb(199, 159, 159);
+    width: 350px;
+}
+.card1 p{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.vac{
+    
+    display:inline-block;
+    background-color: rgb(128, 110, 110);
+    color: white;
+    width: 250px;
+    padding: 33px;
+    text-align: center; 
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    border-radius: 13px;
+    box-shadow: 5px 5px rgb(226, 151, 151);
+}
+  h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 50;
+  }
+#TblCon{
+    background:#efefef;
+  }
+  
+  .Tbl{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  font-size:10px;  
+  }

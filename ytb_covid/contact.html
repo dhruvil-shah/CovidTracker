@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./symp.html">Symptoms</a></li>
+            <li><a href="./prec.html">Precautions</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div class="card" ng-app="">
+
+    
+    <form action="" >
+    <input type="text" id='pname' placeholder="Patient's Name" ng-model="pname" required>
+    <input type="number" id='age' placeholder="Age" ng-model="age" required>
+    <input type="number" id='phone' placeholder="Phone No" ng-model="phone" required maxlength="10" minlength="10">
+    <input type="text" id='state' placeholder="State" ng-model="state" required>
+    <input type="text" id='city' placeholder="City" ng-model="city" required>
+    <input type="number" id='pin' placeholder="Pincode" ng-model="pin" required>
+    <p >Oxygen</p>
+    <input type="checkbox" id='oxy'>
+    <p>Injection</p>
+    <input type="checkbox" id='inj'>
+    <button type="submit" id='save'>Save</button>
+    </form>
+    <div class="card1">
+    <p>Patient Name : {{pname}}</p>
+    <p>Phone No : {{phone}}</p>
+    <p>Age : {{age}}</p>
+    <p>State : {{state}}</p>
+    <p>City: {{city}}</p>
+    <p>Pincode: {{pin}}</p>
+    <p id='ox'>Oxygen: </p>
+    <p id='ij'>Injection: </p>
+    <button type="submit" onclick="msg()">Print Application</button>
+    </div>
+    <div class="vac">
+        For more Queries Please Contact Us according to below given details <br>
+        <h3>Email : abc@gmail.com</h3>
+        <h3>Phone</h3>
+        <h3>+91-7896541230</h3>
+        <h3>   +91-9874653120<br>
+         <h3>Visit Us on : www.covid.com </h3><br>
+    </div>
+</div>
+<div id="TblCon">
+        
+    <h3 style="text-align: center;">More Information?</h3>
+  <table class="Tbl">
+    <tr>
+      <th>WHO</th>
+      <th>CORONAVIRUS OUTBREAK</th> 
+      <th>Novel Coronavirus Situation</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://www.who.int"  target="_blank">
+        <img src="https://devpolicy.org/wp-content/uploads/2015/02/image13.png" alt="world health organization" style="width:100px">
+        </a>
+          </td>
+      <td>
+        <a href="https://www.worldometers.info/coronavirus/" target="_blank">
+        <img src="https://www.worldometers.info/img/worldometers-logo.gif">
+        </a>
+        </td>
+      <td>
+        <a href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd" target="_blank">
+        <img src="https://devpolicy.org/wp-content/uploads/2015/02/image13.png" style="width:100px">
+        </a>
+        </td>
+    </tr>
+  </table>
+    
+    
+  </div>
+
+<script>
+   document.querySelector('#save').addEventListener('click',(e)=>{
+       alert('Successfully Saved');
+       e.preventDefault();
+   });
+    function msg(){
+     alert("Please Visit to Civil Hospital within 3 hours")
+    }
+    setInterval(() => {
+        
+    if(document.querySelector('#oxy').checked){
+        document.querySelector('#ox').innerHTML="Oxygen : Needed";
+    }
+    else
+    document.querySelector('#ox').innerHTML="Oxygen : Not Needed";
+    if(document.querySelector('#inj').checked){
+        document.querySelector('#ij').innerHTML="Injection : Needed";
+    }
+    else
+    document.querySelector('#ij').innerHTML="Injection : Not Needed";
+    }, 1000);
+</script>
+</body>
+</html>

@@ -4,8 +4,6 @@ let death = document.querySelector('#death_data')
 let recover = document.querySelector('#recover_data')
 let btn = document.querySelector('#btn')
 
-
-
 async function Main(type,country){
     try{
         let data
