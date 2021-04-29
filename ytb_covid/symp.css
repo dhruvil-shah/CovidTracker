@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(200, 187, 187, 0.253);
+}
+
+.card{
+    background-color: rgb(161, 148, 148);
+    text-align: center; 
+    padding: 13px;
+    width: 250px;
+    margin: 50px 50px;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 44px;
+    box-shadow: 13px 13px rgb(206, 171, 171);
+    transition:  1s;
+
+}
+.card:hover{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(160, 36, 36);
+    box-shadow: 13px 13px rgba(175, 141, 141, 0.452);
+}
+.card1{
+    /* z-index: 0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card1 .card img{
+width: 150px;
+height: 150px;
+background-color: white;
+border-radius: 33px;
+padding: 13px;
+/* z-index: 1; */
+}
+.card1 .card p{
+    font-size: 22px;
+}
